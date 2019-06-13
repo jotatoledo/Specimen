@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Authors>José Toledo Navarro</Authors>
+    <Summary>Basic contract and abstract implementation of the specification pattern.</Summary>
+    <Description>Basic contract and abstract implementation of the specification pattern.</Description>
+    <TargetFrameworks>netstandard2.0;net452;net461;net472</TargetFrameworks>
+    <AssemblyName>Specimen</AssemblyName>
+    <PackageId>Specimen</PackageId>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <LangVersion>latest</LangVersion>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/dotnetfunctional/Specimen</RepositoryUrl>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <AdditionalFiles Include="$(SolutionDir)\stylecop.json" Link="stylecop.json" />
+  </ItemGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <TreatSpecificWarningsAsErrors />
+  </PropertyGroup>
+  
+  <ItemGroup> 
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>
