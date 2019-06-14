@@ -7,10 +7,14 @@
 
 using System;
 using System.Resources;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Security;
+using NullGuard;
 
 [assembly: CLSCompliant(false)]
 [assembly: AllowPartiallyTrustedCallers]
 [assembly: ComVisible(false)]
 [assembly: NeutralResourcesLanguage("en")]
+[assembly: InternalsVisibleTo("Specimen.Test")]
+[assembly: NullGuard(ValidationFlags.AllPublic | ValidationFlags.NonPublic)]
