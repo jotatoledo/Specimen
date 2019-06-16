@@ -25,7 +25,7 @@ namespace Specimen.Test
             var largerThanTen = new TestSpecification<int>(val => val > 10);
             var largerThanFifthTen = new TestSpecification<int>(val => val > 15);
 
-            var result = new Or<int>(largerThanTen, largerThanFifthTen).IsSatisfiedBy(value);
+            var result = new Or<int>(isPositive, largerThanTen, largerThanFifthTen).IsSatisfiedBy(value);
 
             result.Should()
                 .Be(expected);
