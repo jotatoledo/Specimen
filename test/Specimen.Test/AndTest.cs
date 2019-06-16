@@ -54,7 +54,7 @@ namespace Specimen.Test
             var isPositive = new TestSpecification<int>(val => val > 0);
             var largerThanTen = new TestSpecification<int>(val => val > 10);
 
-            Action nullOperand = () => isPositive.And(largerThanTen, null);
+            Action nullOperand = () => new And<int>(largerThanTen, null);
 
             nullOperand.Should()
                 .Throw<ArgumentException>();
