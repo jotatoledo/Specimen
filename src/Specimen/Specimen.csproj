@@ -3,6 +3,7 @@
     <Authors>José Toledo Navarro</Authors>
     <Summary>Basic contract and abstract implementation of the specification pattern.</Summary>
     <Description>Basic contract and abstract implementation of the specification pattern.</Description>
+    <PackageTags>specification-pattern;design-patterns;OOP</PackageTags>
     <TargetFrameworks>netstandard2.0;net452;net461;net472</TargetFrameworks>
     <AssemblyName>Specimen</AssemblyName>
     <PackageId>Specimen</PackageId>
@@ -29,8 +30,10 @@
     <PackageReference Include="Fody" Version="4.2.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference> 
-    <PackageReference Include="NullGuard.Fody" Version="1.8.7" /> 
+    </PackageReference>
+    <PackageReference Include="NullGuard.Fody" Version="1.8.7">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
