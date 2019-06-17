@@ -39,7 +39,7 @@ deploy:
   name: production
   artifacts: packages
   api_key:
-    secure: RffBv1JUPzoM/xvk4z0YoMh67V7jU2WBvI8RYEl5m3nOQoX1aoJ8UbJ4S4K+jWlS
+    secure: e8rx6aag0rdbm8ZBgUGCqP/I+fhdslB79ftwLk8fXcdgyBRXPEKOjQozFycWpX2m
+  # release from master branch only
   on:
-    # release from master branch only
     branch: master       
