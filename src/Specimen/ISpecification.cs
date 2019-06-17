@@ -17,7 +17,7 @@ namespace Specimen
     public interface ISpecification<T>
     {
         /// <summary>
-        /// Gets the predicate function.
+        /// Gets the predicate expression.
         /// </summary>
         Expression<Func<T, bool>> Predicate { get; }
 
