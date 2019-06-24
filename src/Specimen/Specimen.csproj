@@ -4,7 +4,7 @@
     <Summary>Basic contract and abstract implementation of the specification pattern.</Summary>
     <Description>Basic contract and abstract implementation of the specification pattern.</Description>
     <PackageTags>specification-pattern;design-patterns;OOP</PackageTags>
-    <TargetFrameworks>netstandard2.0;net452;net461;net472</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
     <AssemblyName>Specimen</AssemblyName>
     <PackageId>Specimen</PackageId>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
